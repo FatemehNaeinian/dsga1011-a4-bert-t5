@@ -1,0 +1,36 @@
+.DS_Store
+__pycache__/
+*.pyc
+.claude/settings.local.json
+
+# Python environments
+.venv/
+venv/
+env/
+.ipynb_checkpoints/
+
+# Model weights and checkpoints (too large for GitHub)
+part1/out/
+part1/out_augmented/
+part2/checkpoints/
+*.bin
+*.safetensors
+*.pt
+*.pth
+*.ckpt
+
+# Experiment tracking and training logs
+wandb/
+part1/logs/
+part2/logs/
+*.log
+
+# Part 2 outputs: keep only the final submission files
+part2/results/*
+!part2/results/README.md
+!part2/results/t5_ft_experiment_test.sql
+!part2/results/t5_ft_experiment_ec_test.sql
+part2/records/*
+!part2/records/ground_truth_dev.pkl
+!part2/records/t5_ft_experiment_test.pkl
+!part2/records/t5_ft_experiment_ec_test.pkl
